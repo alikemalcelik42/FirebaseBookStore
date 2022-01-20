@@ -21,8 +21,8 @@ namespace FirebaseBookStore.Concrete
         {
             _config = new FirebaseConfig()
             {
-                AuthSecret = "h08nw8u6MO6HlntwvnJ81TvFGRkGnuMsYydw7Ww0",
-                BasePath = "https://fir-demo-a14d5-default-rtdb.firebaseio.com/"
+                AuthSecret = Secrets.AuthSecret,
+                BasePath = Secrets.BasePath
             };
             _table = "Books";
         }
